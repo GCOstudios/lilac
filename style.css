@@ -25,3 +25,18 @@ Text Domain: kadence-child
 .button-purple-cta a:hover {
   background-color: #615f94 !important;
 }
+
+/* Custom hero section
+-------------------------------------------------------------- */
+.hero-group {}
+
+.hero-group .wp-block-group__inner-container {
+  position: relative;
+}
+
+.hero-group .wp-block-group__inner-container .floating-image {
+  margin: 0;
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
