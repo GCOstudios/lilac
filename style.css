@@ -28,10 +28,34 @@ Text Domain: kadence-child
 
 /* Custom hero section
 -------------------------------------------------------------- */
-.hero-group {}
+.hero {
+  background-image: url('images/mesh.svg');
+  background-position: 100% 90px;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+
+.hero-group {
+  position: relative;
+}
+
+.hero-group::before {
+  content: '';
+  background-color: #FFF5EE;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: -40px;
+  left: -60px;
+}
 
 .hero-group .wp-block-group__inner-container {
   position: relative;
+}
+
+.hero-group .wp-block-group__inner-container figure img {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.1); 
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 }
 
 .hero-group .wp-block-group__inner-container .floating-image {
