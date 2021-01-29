@@ -13,3 +13,6 @@ Text Domain: kadence-child
 
 /* Theme customization starts here
 -------------------------------------------------------------- */
+@import "./mixins/mixins";
+@import "./components/buttons";
+@import "./components/hero";
