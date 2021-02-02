@@ -1,8 +1,8 @@
 /* Custom hero section
 -------------------------------------------------------------- */
 .hero {
-  background-image: url("images/mesh.svg");
-  background-position: 100% 90px;
+  background-image: url("images/mesh-bg.svg");
+  background-position: 159% 0;
   background-repeat: no-repeat;
   padding-bottom: 100px;
 }
@@ -10,15 +10,15 @@
 .hero-group {
   position: relative;
 
-  &::before {
-    content: "";
-    background-color: #fff5ee;
-    width: 500px;
-    height: 600px;
-    position: absolute;
-    top: -40px;
-    left: -60px;
-  }
+  // &::before {
+  //   content: "";
+  //   background-color: rgba(#fff5ee, 0.5);
+  //   width: 500px;
+  //   height: 652px;
+  //   position: absolute;
+  //   top: -40px;
+  //   left: -104px;
+  // }
 
   .wp-block-group__inner-container {
     position: relative;
