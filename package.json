@@ -1,11 +1,11 @@
 {
   "config": {
-    "name": "Your Name",
-    "sitename": "sitename",
+    "name": "Jose Guerra",
+    "sitename": "lilacmindfulness",
     "localserverpath": "/public/wp-content/themes/",
     "productionserverpath": "/wp-content/themes/",
-    "themename": "themename",
-    "siteurl": "http://sitename.com/"
+    "themename": "lilac",
+    "siteurl": "https://lilacmindfulness.ca/"
   },
   "name": "custom-wp-gulp-build",
   "version": "1.0.0",
