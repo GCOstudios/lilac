@@ -1,0 +1,26 @@
+.home {
+  #masthead {
+    background: white !important;
+  }
+}
+
+.site-branding {
+  .site-title {
+    color: transparent !important;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("images/lilac-logo-purple.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 80px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      z-index: 1;
+    }
+  }
+}
