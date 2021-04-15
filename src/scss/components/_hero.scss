@@ -5,6 +5,17 @@
   background-position: 159% 0;
   background-repeat: no-repeat;
   padding-bottom: 100px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("images/White_crocus.png");
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+    width: 425px;
+    height: 550px;
+  }
 }
 
 .hero-group {
