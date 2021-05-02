@@ -1,21 +1,37 @@
 /* Custom hero section
 -------------------------------------------------------------- */
 .hero {
-  background-image: url("images/mesh-bg.svg");
-  background-position: 159% 0;
-  background-repeat: no-repeat;
-  padding-bottom: 100px;
+  // padding-bottom: 100px;
+  margin-top: 110px;
+  margin-bottom: 100px;
   position: relative;
 
   &::after {
     content: "";
-    background-image: url("images/White_crocus.png");
+    width: 100%;
+    height: 132%;
+    background-image: url("images/mesh-bg.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
     position: absolute;
-    bottom: -160px;
-    left: 0;
-    width: 425px;
-    height: 550px;
+    top: 0;
+    left: 36%;
   }
+
+  .kt-row-layout-inner {
+    .kt-row-column-wrap {
+      align-items: center;
+    }
+  }
+}
+
+.hero-left {
+  height: 100%;
+  justify-self: center;
+}
+
+.hero-right {
+  padding-top: 35px;
 }
 
 .hero-group {
@@ -46,6 +62,26 @@
         -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
       }
+    }
+  }
+}
+
+.crocus-divider {
+  position: relative;
+
+  @include breakpoint(766px) {
+    &::after {
+      content: "";
+      background-image: url("images/White_crocus.png");
+      position: absolute;
+      bottom: -160px;
+      left: 0;
+      width: 425px;
+      height: 550px;
+    }
+
+    .kt-block-spacer {
+      height: 300px !important;
     }
   }
 }
