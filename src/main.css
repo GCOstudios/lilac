@@ -1,0 +1,222 @@
+/*!
+Theme Name: Lilac Mindfulness Theme
+Theme URI: https://www.lilacmindfulness.ca/
+Template: kadence
+Author: Jose Guerra
+Author URI: https://joseguerra.uk/
+Description: A custom WordPress theme, responsive and customizable.
+Version: 1.0.0
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: kadence-child
+*/
+/* Theme customization starts here
+-------------------------------------------------------------- */
+.button-purple-cta a {
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid #6561b7;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-purple-cta a:focus, .button-purple-cta a:hover {
+  background-color: #615f94 !important;
+}
+
+.home #masthead {
+  background: white !important;
+}
+
+.site-header-row-container-inner {
+  padding-top: 1.8rem;
+  padding-bottom: 0;
+}
+
+.site-branding .site-title {
+  color: transparent !important;
+  position: relative;
+}
+
+.site-branding .site-title::before {
+  content: "";
+  background-image: url("images/lilac-logo-purple.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -36px;
+  left: 0;
+  width: 200px;
+  height: 80px;
+  z-index: 1;
+}
+
+.home .site-branding .site-title::before {
+  top: 0;
+  width: 250px;
+  height: 114px;
+}
+
+/* Custom hero section
+-------------------------------------------------------------- */
+.hero {
+  margin-top: 110px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 132%;
+  background-image: url("images/mesh-bg.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 36%;
+}
+
+.hero .kt-row-layout-inner .kt-row-column-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-left {
+  height: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hero-right {
+  padding-top: 35px;
+}
+
+.hero-group {
+  position: relative;
+}
+
+.hero-group .wp-block-group__inner-container {
+  position: relative;
+}
+
+.hero-group .wp-block-group__inner-container .floating-image {
+  margin: 0;
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+
+.hero-group .wp-block-group__inner-container figure img {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.crocus-divider {
+  position: relative;
+}
+
+@media (min-width: 766px) {
+  .crocus-divider::after {
+    content: "";
+    background-image: url("images/White_crocus.png");
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+    width: 425px;
+    height: 550px;
+  }
+  .crocus-divider .kt-block-spacer {
+    height: 300px !important;
+  }
+}
+
+.main-navigation .primary-menu-container > ul > li {
+  margin-right: 2.3rem;
+}
+
+.main-navigation .primary-menu-container > ul > li:last-child {
+  margin-right: 0;
+}
+
+.main-navigation .primary-menu-container > ul > li > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6c6b6b !important;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-navigation .primary-menu-container > ul > li > a::before {
+  content: "";
+  background-color: #6c6b6b;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  max-width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-navigation .primary-menu-container > ul > li > a:focus::before, .main-navigation .primary-menu-container > ul > li > a:hover::before {
+  max-width: 100%;
+}
+
+.home .section-1 {
+  margin-bottom: 100px !important;
+}
+
+.home .section-1 .kt-row-column-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .section-1 .kt-row-column-wrap .inner-column-2 .kt-inside-inner-col {
+  max-width: 520px;
+}
+
+.home .section-2 {
+  margin-bottom: 100px !important;
+}
+
+.home .section-2 .kt-row-column-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .section-2 .kt-row-column-wrap .inner-column-2 .kt-inside-inner-col {
+  max-width: 520px;
+}
+
+.home .services-divider {
+  margin-bottom: 124px;
+}
+
+.home .services-divider hr {
+  border-top-width: 3px !important;
+}
+
+.home .services-divider hr::before {
+  content: "";
+  background-color: #efd9ce;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: -336px;
+  left: -300px;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+/*# sourceMappingURL=main.css.map */
