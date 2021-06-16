@@ -3,7 +3,7 @@
  * Enqueue child styles.
  */
 function child_enqueue_styles() {
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array(), 1623501512 );
+	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array(), 1623871039 );
 	wp_enqueue_script( 'child-js', get_stylesheet_directory_uri() . '/js/script.js', array(), 1623501512 );
 }
 
